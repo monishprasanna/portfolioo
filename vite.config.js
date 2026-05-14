@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   // Using repository path base optimized for GitHub Pages deployment.
-  base: '/monish_port/',
+  base: '/portfolioo/',
 });
