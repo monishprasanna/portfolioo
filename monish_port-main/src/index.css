@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Fraunces", "Cormorant Garamond", ui-serif, Georgia, serif;
+    --font-sans: "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    --radius: 0.625rem;
+
+    /* Base dark mode OKLCH theme variables from Lovable preview */
+    --background: oklch(12.9% 0.042 264.695);
+    --foreground: oklch(98.4% 0.003 247.858);
+    --card: oklch(20.8% 0.042 265.755);
+    --card-foreground: oklch(98.4% 0.003 247.858);
+    --popover: oklch(20.8% 0.042 265.755);
+    --popover-foreground: oklch(98.4% 0.003 247.858);
+    --primary: oklch(92.9% 0.013 255.508);
+    --primary-foreground: oklch(20.8% 0.042 265.755);
+    --secondary: oklch(27.9% 0.041 260.031);
+    --secondary-foreground: oklch(98.4% 0.003 247.858);
+    --muted: oklch(27.9% 0.041 260.031);
+    --muted-foreground: oklch(70.4% 0.04 256.788);
+    --accent: oklch(27.9% 0.041 260.031);
+    --accent-foreground: oklch(98.4% 0.003 247.858);
+    --destructive: oklch(70.4% 0.191 22.216);
+    --destructive-foreground: oklch(98.4% 0.003 247.858);
+    --border: oklch(100% 0 0 / 0.1);
+    --input: oklch(100% 0 0 / 0.15);
+    --ring: oklch(55.1% 0.027 264.364);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Elegant minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--muted);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--muted-foreground);
+  }
+}
