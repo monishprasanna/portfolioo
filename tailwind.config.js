@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
@@ -28,20 +28,23 @@ export default {
         ring: "var(--ring)",
       },
       fontFamily: {
-        display: ['Fraunces', 'serif'],
-        sans: ['Inter Tight', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        display: "var(--font-display)",
+        sans: "var(--font-sans)",
+        mono: "var(--font-mono)",
       },
-      animation: {
-        'scroll': 'scroll 40s linear infinite',
+      borderRadius: {
+        DEFAULT: "var(--radius)",
       },
       keyframes: {
         scroll: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-33.33%)' },
-        }
-      }
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-100% / 3))" },
+        },
+      },
+      animation: {
+        scroll: "scroll 40s linear infinite",
+      },
     },
   },
   plugins: [],
-}
+};
