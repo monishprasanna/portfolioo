@@ -46,7 +46,7 @@ const Contact = () => {
           className="md:col-span-4 flex flex-col items-start md:items-end gap-3 pt-4 md:pt-0"
         >
           <a 
-            href="https://github.com" 
+            href="https://github.com/monishprasanna" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-between w-full md:w-48 px-5 py-3.5 rounded-full border border-border bg-card text-xs font-medium text-foreground hover:bg-card/80 transition-all group"
