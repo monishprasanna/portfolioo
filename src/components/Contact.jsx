@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowDown } from 'lucide-react';
 
 const Contact = () => {
-  const myEmail = "monishprasanna@example.com";
+  const myEmail = "monishprasanna99424@gmail.com";
 
   return (
     <section id="contact" className="py-24 md:py-32 max-w-[1400px] mx-auto border-b border-border">
