@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowDown } from 'lucide-react';
 
 const Contact = () => {
-  const myEmail = "monishprasanna99424@gmail.com";
+  const myEmail = "monishprasanna@example.com";
 
   return (
     <section id="contact" className="py-24 md:py-32 max-w-[1400px] mx-auto border-b border-border">
@@ -46,7 +46,7 @@ const Contact = () => {
           className="md:col-span-4 flex flex-col items-start md:items-end gap-3 pt-4 md:pt-0"
         >
           <a 
-            href="https://github.com/monishprasanna" 
+            href="https://github.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-between w-full md:w-48 px-5 py-3.5 rounded-full border border-border bg-card text-xs font-medium text-foreground hover:bg-card/80 transition-all group"
@@ -58,7 +58,7 @@ const Contact = () => {
           </a>
 
           <a 
-            href="www.linkedin.com/in/monish-prasanna-7666a7405" 
+            href="https://linkedin.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-between w-full md:w-48 px-5 py-3.5 rounded-full border border-border bg-card text-xs font-medium text-foreground hover:bg-card/80 transition-all group"
@@ -80,7 +80,10 @@ const Contact = () => {
           </a>
 
           <a 
-            href="#contact" 
+            href="/resume.pdf" 
+            download="Monish_Prasanna_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-between w-full md:w-48 px-5 py-3.5 rounded-full border border-border bg-card text-xs font-medium text-foreground hover:bg-card/80 transition-all group"
           >
             <span>R&eacute;sum&eacute; (PDF)</span>
