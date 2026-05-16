@@ -22,11 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'backdrop-blur-md bg-background/80 border-b border-border shadow-sm' 
-        : 'bg-transparent border-b border-transparent'
-    }`}>
+    <nav className="fixed top-0 inset-x-0 z-50 transition-all duration-300 backdrop-blur-md bg-black/60 border-b border-border/50 shadow-sm">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
         
         {/* Brand */}
@@ -70,7 +66,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border px-6 py-6 space-y-4 shadow-xl transition-all">
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/90 backdrop-blur-xl border-b border-border px-6 py-6 space-y-4 shadow-xl transition-all">
           {navLinks.map((link) => (
             <a
               key={link.name}
